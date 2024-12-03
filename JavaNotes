@@ -1,0 +1,10 @@
+- java is Object Oriented Programming Language
+- java is compiler based as well as interpreter based programming language
+- platform independant cause it JVM run the machine code on any OS
+
+Source code -> compiler -> bytecode -> JVM converts it machine code
+
+- here the source code to bytecode is compile time process and remaing are the run time process
+
+JVM -
+converts the bytecode to the machine code
