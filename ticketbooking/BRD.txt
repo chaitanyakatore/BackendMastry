@@ -1,0 +1,50 @@
+IRTC
+functional requirements
+able to signin and signup
+fetch/search train from A->B
+show availble seats
+ticket booking
+fetch ticket
+
+LLD
+
+entities
+
+1. User :
+
+- string name
+- string hashed_pass
+- List<String> ticket books
+- string uuid
+
+2. Ticket :
+
+- string ticketId
+- string userid fk
+- string source
+- string destination
+- date dateOfTravel
+- Train train
+
+3. Train
+
+- string trainId
+- number trainNo.
+- DateTime departureTime
+- DateTime arrivalTime
+- List<List<boolean>> seats
+
+SERVICES
+
+1. USER-BOOKING-SERVICE
+
+- LoginUser(User user)
+- Signup(User user)
+- FetchBooking(userId)
+- cancel Booking
+  bookTicket(string a, string b)
+
+2. TRAIN-SERVICE
+
+- searchTicket(String a, String b)
+- getSeatsAvailable(Train t1)
