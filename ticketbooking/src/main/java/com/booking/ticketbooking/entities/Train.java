@@ -1,5 +1,48 @@
 package com.booking.ticketbooking.entities;
 
+import java.time.LocalTime;
+import java.util.List;
+import java.util.Map;
+
 public class Train {
+
+    private String trainId;
+    private String trainNo;
+    private List<List<Integer>> seats;
+    private Map<String, LocalTime> stationTime;
+    private List<String> stations;
+    
+    public String getTrainId() {
+        return trainId;
+    }
+    public void setTrainId(String trainId) {
+        this.trainId = trainId;
+    }
+    public String getTrainNo() {
+        return trainNo;
+    }
+    public void setTrainNo(String trainNo) {
+        this.trainNo = trainNo;
+    }
+    public List<List<Integer>> getSeats() {
+        return seats;
+    }
+    public void setSeats(List<List<Integer>> seats) {
+        this.seats = seats;
+    }
+    public Map<String, LocalTime> getStationTime() {
+        return stationTime;
+    }
+    public void setStationTime(Map<String, LocalTime> stationTime) {
+        this.stationTime = stationTime;
+    }
+    public List<String> getStations() {
+        return stations;
+    }
+    public void setStations(List<String> stations) {
+        this.stations = stations;
+    }
+
+    
 
 }
