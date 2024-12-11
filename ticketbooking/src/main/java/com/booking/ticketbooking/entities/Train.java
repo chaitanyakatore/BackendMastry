@@ -9,9 +9,21 @@ public class Train {
     private String trainId;
     private String trainNo;
     private List<List<Integer>> seats;
-    private Map<String, LocalTime> stationTime;
+    private Map<String, String> stationTime;
     private List<String> stations;
+
+    public Train(){
+        
+    }
     
+    public Train(String trainId, String trainNo, List<List<Integer>> seats, Map<String, String> stationTime,
+            List<String> stations) {
+        this.trainId = trainId;
+        this.trainNo = trainNo;
+        this.seats = seats;
+        this.stationTime = stationTime;
+        this.stations = stations;
+    }
     public String getTrainId() {
         return trainId;
     }
@@ -30,10 +42,10 @@ public class Train {
     public void setSeats(List<List<Integer>> seats) {
         this.seats = seats;
     }
-    public Map<String, LocalTime> getStationTime() {
+    public Map<String, String> getStationTime() {
         return stationTime;
     }
-    public void setStationTime(Map<String, LocalTime> stationTime) {
+    public void setStationTime(Map<String, String> stationTime) {
         this.stationTime = stationTime;
     }
     public List<String> getStations() {
